@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Tathastu Event & wedding planner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    #icon_btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 400000px) {
+      #audio_play {
+        display: none;
+      }
+    }
+
+    .services_heading {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 800px) {
+      .services_heading {
+        font-size: 11px;
+      }
+    }
+    @media screen and (min-width: 0px) and (max-width: 800px) {
+      #img_popup{
+        width:100% !important;
+        margin-left: -8px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header role="banner">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container" style="position: fixed;top: 0;width: 100%;right:0;left:0;">
+        <a class="navbar-brand" href="index.html">
+          Tathastu
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Our Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="aud_play_pause()" id="icon_btn" class="nav-link"><i class="fa fa-play-circle"
+                  style="font-size:24px"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END header -->
+
+  <section class="home-slider owl-carousel">
+
+    <div class="slider-item"
+      style="background-image: url('https://ik.imagekit.io/veub8tjlplror/Tathastu/22_rkJxeSwnV.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1>Who We Are</h1>
+            <p class="mb-5">Tathastu makes weddings Beautiful and Memorable. After all, a special occasion deservs
+              special attention. We go that extra distance to put 'WOW' factor into every details with out team of
+              expert Wedding Planners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- END slider -->
+
+  <section class="section pt-md-5 pb-md-5 element-animate">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-12">
+          <h2 style="text-align: center;">Be a part of us and get an excellent service.</h2>
+          <section class="section pt-5 pb-2">
+            <div class="container">
+              <div class="row mb-5 justify-content-center element-animate">
+                <div class="col-md-12">
+                  <h2>Our Services</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2><a href="reg/registration.html">PRE-WEDDING PHOTOSHOOT</a></h2>
+                      <p class="sermon-meta">A pre-wedding photoshoot, often referred to as an engagement shoot. It is a
+                        photoshoot that usually takes place two or three months prior to the wedding day. A team of
+                        professional photographer will take care of your pre-wedding.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/1_S1-fiLWpN.jpg" style="width: 100%;height: 210px;"
+                        onclick="document.getElementById('id01').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id01" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id01').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">PRE-WEDDING PHOTOSHOOT</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/1_S1-fiLWpN.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/rock-garden-couple-shoot-ideas_H1Qxsh7TV.jpg"
+                          style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">INVITATION CARDS DESIGNING &
+                          PRINTING</a></h2>
+                      <p class="sermon-meta">An invitation card is the face of your wedding. We will not only help you
+                        home in on the best design, but also give you the best quality printing at the best rates.</p>
+                    </div>
+                    <div class="player">
+                      <img
+                        src="https://ik.imagekit.io/veub8tjlplror/handmade-indian-wedding-invitation-cards-20-great-indian-creative-hindu-wedding-invitation-which-brings-the-ancient-collection_B1MhsIZTN.jpg"
+                        style="width: 100%;height: 228px;"
+                        onclick="document.getElementById('id02').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id02" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id02').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">INVITATION CARDS DESIGNING & PRINTING</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img
+                          src="https://ik.imagekit.io/veub8tjlplror/handmade-indian-wedding-invitation-cards-20-great-indian-creative-hindu-wedding-invitation-which-brings-the-ancient-collection_B1MhsIZTN.jpg"
+                          style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/Narmada-arjun-inside-1_rknX4Sr6N.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">VENUES & LOCATIONS</a></h2>
+                      <p class="sermon-meta" style="font-size:10px;">For a wedding to be truely wonderful, selecting the
+                        perfect location &
+                        venue is more important than anything else. A great venue not only brings out the best in an
+                        enviournment, it also takes care of practical issues that one may otherwise face, like storage,
+                        logistic, parking space & so on.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/cq5dam.web.1280.1280_H1WXhLZTN.jpeg"
+                        style="width: 100%;height: 215px;"
+                        onclick="document.getElementById('id03').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id03" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id03').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">VENUES & LOCATIONS</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/cq5dam.web.1280.1280_H1WXhLZTN.jpeg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/romentic_H1sYVSSpN.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">
+                          THEME WEDDING</a></h2>
+                      <p class="sermon-meta" style="font-size:10px;"> Because every wedding should have a personality
+                        and should be unique. When
+                        our team of wedding organisers meet you, open your heart & tell them what you like, what you are
+                        fan of & we will figure out a great theme & execute it. The point is, TATHASTU belives in the
+                        power of a beautiful theme in taking your wedding to the next level.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/MyShaadiWale-10_S19dnLWp4.jpg"
+                        style="width: 100%;height: 214px;"
+                        onclick="document.getElementById('id04').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id04" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id04').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">THEME WEDDING</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/MyShaadiWale-10_S19dnLWp4.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/MyShaadiWale-4-1500x1000_HyapNBSTE.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">DESTINATION WEDDING</a></h2>
+                      <p class="sermon-meta">For house of Luxury Wedding there is no event too Sobar or Unbelievable.
+                        Whether you wish for Royal Wedding or a Special Wedding. There is no limit to what we can
+                        arrange for our clients. We will transform the wildest dreams into reality by creating precious
+                        moments for the couples.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/anantara-riverside-866x650_SyX168WaN.jpg"
+                        style="width: 100%;height: 210px;"
+                        onclick="document.getElementById('id05').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id05" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id05').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">DESTINATION WEDDING</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/anantara-riverside-866x650_SyX168WaN.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/Untitled-3-1_HJFzrHBpV.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">WEDDING DECORATIONS</a></h2>
+                      <p class="sermon-meta"> Unique themes for bridal flowers & complete wedding reception decoration.
+                        We ensure that your wedding decorations will exceed your & everyone's expectations. It also
+                        includes each and every thing that is required in the wedding.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/45776-IMG_1126_Sy-nrSraE.jpeg"
+                        style="width:100%; height:228px;"
+                        onclick="document.getElementById('id06').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id06" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id06').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">WEDDING DECORATIONS</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/45776-IMG_1126_Sy-nrSraE.jpeg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/1d_rkXirHH6E.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">WEDDING CATERING</a></h2>
+                      <p class="sermon-meta">Our chef ensure that we can deliver a selection of delicious wedding menus
+                        which will be delivered with great services to large venues with many guests.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/6Q2A0593-2_SJRgLrr6N.jpg"
+                        style="width: 100%;height: 210px;"
+                        onclick="document.getElementById('id07').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id07" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id07').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">WEDDING CATERING</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/6Q2A0593-2_SJRgLrr6N.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/Catering-Services-Hyderabad-2_SybMIHr6E.jpg"
+                          style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">TATTO SAJANO</a></h2>
+                      <p class="sermon-meta">It has a huge importance in Bengali Wedding. So we will make your gifts
+                        more attractive that will attract everbody.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/_MG_0599_copy_rkMrUSBaN.jpg"
+                        style="width: 100%;height: 243px;"
+                        onclick="document.getElementById('id08').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id08" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id08').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">TATTO SAJANO</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/_MG_0599_copy_rkMrUSBaN.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/192_S1GL8HBaN.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">BEAUTICIANS & STYLISTS</a></h2>
+                      <p class="sermon-meta" style="font-size:10px;">A Bride & Groom must be the center of attraction.
+                        We have a team of
+                        professional beauticians & stylists on call, each one is an expert in her or his domain. They
+                        will will design specifically for you & go into minute details to ensure you look like a million
+                        dollars on your special day.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/l_c1543d8058e5972532b23dfa43257de7_B119ISraN.jpg"
+                        style="width: 100%;height: 177px;"
+                        onclick="document.getElementById('id09').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id09" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id09').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">BEAUTICIANS & STYLISTS</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/l_c1543d8058e5972532b23dfa43257de7_B119ISraN.jpg"
+                          style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/MUA-working-on-bride-1_S1HqLSrTN.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">WEDDING PHOTOGRAPHY</a></h2>
+                      <p class="sermon-meta">One of the most significant people on your wedding day is your
+                        photographer. The whole day will fly by & you will want to ensure that you don't miss a thing.
+                        When you look back on your big day, your photos are a reliable & precious memory making your
+                        photographer an important choice.</p>
+                    </div>
+                    <div class="player">
+                      <img
+                        src="https://ik.imagekit.io/veub8tjlplror/WhatsApp_Image_2019-05-17_at_11.17.00_By-RUrr6E.jpeg"
+                        style="width: 100%;height: 181px;"
+                        onclick="document.getElementById('id10').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id10" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id10').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">WEDDING PHOTOGRAPHY</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img
+                          src="https://ik.imagekit.io/veub8tjlplror/WhatsApp_Image_2019-05-17_at_11.17.00_By-RUrr6E.jpeg"
+                          style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img
+                          src="https://ik.imagekit.io/veub8tjlplror/WhatsApp_Image_2019-05-17_at_11.16.59_B1rCUSHT4.jpeg"
+                          style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">MEHENDI & SANGEET</a></h2>
+                      <p class="sermon-meta">These are two of the most important rituals in a wedding, & they deserve
+                        all the attention one can give. After all this, ritual has a deeper root; it signifies "one's
+                        inner sun" or "awakening", which is important for an aware & happy life.</p>
+                    </div>
+                    <div class="player">
+                      <img
+                        src="https://ik.imagekit.io/veub8tjlplror/16649285_1868483540055453_4232016647054972049_n_rkizDrBT4.jpg"
+                        style="width: 100%;height: 210px;"
+                        onclick="document.getElementById('id11').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id11" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id11').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">MEHENDI & SANGEET</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img
+                          src="https://ik.imagekit.io/veub8tjlplror/16649285_1868483540055453_4232016647054972049_n_rkizDrBT4.jpg"
+                          style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/monishaashwin_rk3QDSraV.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">TRAVEL SERVICES</a></h2>
+                      <p class="sermon-meta">TATHASTU provides a variety of transpost options so that your family & your
+                        guests have no trouble getting around. We have a tie-up with the best transport companies. All
+                        vehicles - just a call away.</p>
+                    </div>
+                    <div class="player">
+                      <img src="https://ik.imagekit.io/veub8tjlplror/img_2521_SyvtvrBa4.jpg"
+                        style="width: 100%;height: 230px;"
+                        onclick="document.getElementById('id12').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id12" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id12').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">TRAVEL SERVICES</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/img_2521_SyvtvrBa4.jpg" style="width: 44%;
+                        height: 314px;
+                        margin: 10% 0% 3% 4%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;" id="img_popup">
+
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">BAARAT BANDS</a></h2>
+                      <p class="sermon-meta">Festivities have to be "DHOOM DHAM". No wedding is complete without the
+                        festive feeling.</p>
+                    </div>
+                    <div class="player">
+                      <img
+                        src="https://ik.imagekit.io/veub8tjlplror/videoblocks-bandmaster-playing-on-a-trumpet-bandwalas-playing-on-their-instruments-in-the-park-men-in-red-play-the-trumpet-closeup_hpl6zuuy_thumbnail-full01_Hk3yOSSa4.png"
+                        style="width: 100%;height: 265px;"
+                        onclick="document.getElementById('id13').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id13" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id13').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">BAARAT BANDS</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img
+                          src="https://ik.imagekit.io/veub8tjlplror/videoblocks-bandmaster-playing-on-a-trumpet-bandwalas-playing-on-their-instruments-in-the-park-men-in-red-play-the-trumpet-closeup_hpl6zuuy_thumbnail-full01_Hk3yOSSa4.png"
+                          style="width: 100%;
+                          height: 314px;
+                          margin: 10% 0% 3% 4%;
+                          margin-left: auto;
+                          margin-right: auto;
+                          display: block;">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">DJ SERVICES</a></h2>
+                      <p class="sermon-meta"> A wedding should not only seen & heard but also the night should be stay
+                        youngh for long. We will get you the DJ's out there as per the kind of music you would like at
+                        your functions.</p>
+                    </div>
+                    <div class="player">
+                      <img
+                        src="https://ik.imagekit.io/veub8tjlplror/dj-ango-dj-services-10123786-b4929c74_HySVOHHTN.jpeg"
+                        style="width: 100%;height: 228px;"
+                        onclick="document.getElementById('id14').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id14" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id14').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">DJ SERVICES</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img
+                          src="https://ik.imagekit.io/veub8tjlplror/dj-ango-dj-services-10123786-b4929c74_HySVOHHTN.jpeg"
+                          style="width: 45%;
+                        height: 300px;
+                        margin: 3% 0% 0% 4%;" id="img_popup">
+                        <img src="https://ik.imagekit.io/veub8tjlplror/slider_image1_HkR4uHB6E.jpg" style="width: 45%;
+                        height: 300px;
+                        margin: 3% 2% 0% 2%;" id="img_popup">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+                  <div class="sermon element-animate">
+                    <div class="sermon-text">
+                      <h2 class="services_heading"><a href="reg/registration.html">FIREWORKS</a></h2>
+                      <p class="sermon-meta">The climax of a great wedding is, of course fireorks. Our team will turn
+                        the evening sky into a canvas of bright colours that will leave everybody in a state of joy.
+                        After all, a great exit is as important as a grand entrance.</p>
+                    </div>
+                    <div class="player">
+                      <img
+                        src="https://ik.imagekit.io/veub8tjlplror/Canada_Day_2016_Fireworks__27929885402__SkksuBrpN.jpg"
+                        style="width: 100%;height: 210px;"
+                        onclick="document.getElementById('id15').style.display='block'" />
+                    </div>
+                  </div>
+
+                </div>
+                <div id="id15" class="w3-modal w3-animate-opacity">
+                  <div class="w3-modal-content w3-card-4">
+                    <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id15').style.display='none'"
+                        class="w3-button w3-large w3-display-topright">&times;</span>
+                      <h2 class="services_heading">FIREWORKS</h2>
+                    </header>
+                    <div class="w3-container">
+                      <div class="w3-container-child">
+                        <img
+                          src="https://ik.imagekit.io/veub8tjlplror/Canada_Day_2016_Fireworks__27929885402__SkksuBrpN.jpg"
+                          style="
+                           width: 100%;
+    height: 314px;
+    margin: 10% 0% 3% 4%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+">
+                      </div>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                      <p>Contact Us : 9641962834</p>
+                    </footer>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END section -->
+
+
+
+  <section class="section pt-5 pb-2">
+    <div class="container">
+      <div class="row mb-5 justify-content-center element-animate">
+        <div class="col-md-12">
+          <span class="section-heading">Recent Sermons</span>
+          <h2>Our Few Previous Events</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>Digha</a></h2>
+              <p class="sermon-meta"> on March 28, 2019</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/27_Hk1JDBP3V.jpg"
+                style="width: 100%;height: 210px;" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>Bolpur</a></h2>
+              <p class="sermon-meta"> on April 12, 2019</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/28_H1XQPHP2N.jpg"
+                style="width: 100%;height: 210px;" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>Siliguri</a></h2>
+              <p class="sermon-meta"> on March 3, 2019</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/29_H1GUPSvnN.jpg"
+                style="width: 100%;height: 210px;" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- END section -->
+
+
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <h3>About The TATHASTU </h3>
+          <p class="mb-5">Tathastu makes weddings Beautiful and Memorable. After all, a special occasion deservs special
+            attention. We go that extra distance to put 'WOW' factor into every details with out team of expert Wedding
+            Planners.</p>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">Our Services</a></li>
+            <li><a href="gallery.html">Galley</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 mb-5">
+          <h3>Contact Info</h3>
+          <ul class="list-unstyled footer-link">
+            <li class="d-block">
+              <span class="d-block">Address:</span>
+              <span class="text-white">SUNSHINE PLAZA(OPPOSITE TOMUNICIPAL TOLLGATE)JAMBONI (WARD NO -
+                6),P.S.+P.O.-BOLPUR,
+
+                DIST. BIRBHUM,PIN-731204</span></li>
+            <li class="d-block"><span class="d-block">Phone: <span class="text-white">9123856915 /
+                  9933023727</span></br>
+
+                OFFICE NO. - <span class="text-white">9641962834</span>
+            </li>
+            <li class="d-block"><span class="d-block">Email:</span><span class="text-white">info@yourdomain.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
+  <div id="audio_play">
+    <audio loop autoplay id="myTune">
+      <source src="bg-audio.mpeg" type="audio/mpeg">
+    </audio>
+  </div>
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#f4b214" /></svg></div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelement-and-player.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+
+      for (var i = 0; i < total; i++) {
+        new MediaElementPlayer(mediaElements[i], {
+          pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+          shimScriptAccess: 'always',
+          success: function () {
+            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+            for (var j = 0; j < targetTotal; j++) {
+              target[j].style.visibility = 'visible';
+            }
+          }
+        });
+      }
+    });
+  </script>
+  <script>
+    document.getElementsByClassName("slider-item")[0].style.WebkitFilter = 'blur(4px)';
+    document.getElementsByClassName("slider-item")[0].style.filter = 'blur(4px)';
+  </script>
+  <script>
+    function aud_play_pause() {
+      var myAudio = document.getElementById("myTune");
+      if (myAudio.paused) {
+        myAudio.play();
+      } else {
+        myAudio.pause();
+      }
+    }
+  </script>
+</body>
+
+</html>

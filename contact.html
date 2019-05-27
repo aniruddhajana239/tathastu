@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Tathastu Event & wedding planner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+  <style>
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
+    }
+
+    #icon_btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 400000px) {
+      #audio_play {
+        display: none;
+      }
+
+      /* show it on small screens */
+    }
+  </style>
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header role="banner">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container" style="position: fixed;top: 0;width: 100%;right:0;left:0;">
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/logo_ryhjt08nV.png" />
+                            </a> -->
+          Tathastu
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Our Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="aud_play_pause()" id="icon_btn" class="nav-link"><i class="fa fa-play-circle"
+                  style="font-size:24px"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END header -->
+
+  <section class="home-slider owl-carousel">
+
+    <div class="slider-item"
+      style="background-image: url('https://ik.imagekit.io/veub8tjlplror/Tathastu/get_in_touch_ByTahLD3V.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- END slider -->
+
+  <section class="section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center element-animate">
+        <div class="col-md-12">
+          <span class="section-heading">Contact</span>
+          <h2>Get In Touch</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <form action="mail.php" method="post">
+
+            <div class="row mb-4">
+              <div class="col-md-4 mb-md-0 mb-4">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+              </div>
+              <div class="col-md-4 mb-md-0 mb-4">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+              </div>
+              <div class="col-md-4 mb-md-0 mb-4">
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-12">
+                <textarea name="message" id="message" class="form-control" placeholder="Write some words of encouragement" cols="30"
+                  rows="10"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <a href="mailto:aniruddhajana239@gmail.com" target="_top"><input type="submit"
+                    class="btn btn-primary btn-block" value="Send Message"></a>
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- END section -->
+
+
+  <section class="section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center element-animate">
+        <div class="col-md-12">
+          <h2 style="text-align: center; ">Find Us on Map</h2>
+        </div>
+      </div>
+      <div id="map">
+
+      </div>
+    </div>
+  </section>
+
+  <div id="audio_play">
+    <audio loop autoplay id="myTune">
+      <source src="bg-audio.mpeg" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <h3>About The TATHASTU </h3>
+          <p class="mb-5">Tathastu makes weddings Beautiful and Memorable. After all, a special occasion deservs special
+            attention. We go that extra distance to put 'WOW' factor into every details with out team of expert Wedding
+            Planners.</p>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">Our Services</a></li>
+            <li><a href="gallery.html">Galley</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 mb-5">
+          <h3>Contact Info</h3>
+          <ul class="list-unstyled footer-link">
+            <li class="d-block">
+              <span class="d-block">Address:</span>
+              <span class="text-white">SUNSHINE PLAZA(OPPOSITE TOMUNICIPAL TOLLGATE)JAMBONI (WARD NO -
+                6),P.S.+P.O.-BOLPUR,
+
+                DIST. BIRBHUM,PIN-731204</span></li>
+            <li class="d-block"><span class="d-block">Phone: <span class="text-white">9123856915 /
+                  9933023727</span></br>
+
+                OFFICE NO. - <span class="text-white">9641962834</span>
+            </li>
+            <li class="d-block"><span class="d-block">Email:</span><span class="text-white">info@yourdomain.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#f4b214" /></svg></div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelement-and-player.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+
+      for (var i = 0; i < total; i++) {
+        new MediaElementPlayer(mediaElements[i], {
+          pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+          shimScriptAccess: 'always',
+          success: function () {
+            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+            for (var j = 0; j < targetTotal; j++) {
+              target[j].style.visibility = 'visible';
+            }
+          }
+        });
+      }
+    });
+  </script>
+  <script>
+    function initMap() {
+      // The location of Uluru
+      var uluru = { lat: 23.683995, lng: 87.669597 };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.getElementById('map'), { zoom: 14, center: uluru });
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({ position: uluru, map: map });
+    }
+  </script>
+  <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHsujFgjinXxVlWziyRqHGBgPrl7fNq_s&callback=initMap">
+    </script>
+  <script>
+    document.getElementsByClassName("slider-item")[0].style.WebkitFilter = 'blur(4px)';
+    document.getElementsByClassName("slider-item")[0].style.filter = 'blur(4px)';
+  </script>
+  <script>
+    function aud_play_pause() {
+      var myAudio = document.getElementById("myTune");
+      if (myAudio.paused) {
+        myAudio.play();
+      } else {
+        myAudio.pause();
+      }
+    }
+  </script>
+</body>
+
+</html>

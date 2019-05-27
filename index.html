@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Tathastu Event & wedding planner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/popup.css" type="text/css" />
+
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #what_we_are {
+      background-color: rgb(95, 112, 108)(112, 95, 95)(112, 95, 95)(112, 95, 95);
+      /* For browsers that do not support gradients */
+      background-image: linear-gradient(to right, rgb(0, 255, 213), rgb(0, 132, 255));
+    }
+
+    .nav-link:hover {
+      background-color: #5AC8D8;
+      border-radius: 50px;
+    }
+
+    body {
+      overflow: scroll !important;
+      -webkit-overflow-scrolling: touch !important;
+    }
+
+    #icon_btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 400000px) {
+      #audio_play {
+        display: none;
+      }
+
+      /* show it on small screens */
+    }
+
+
+    /* navbar Toggle */
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+
+</head>
+
+<body onload="enter()">
+
+
+  <!-- <bgsound src="bg-audio.mpeg" loop="infinite"> -->
+
+
+  <div class='popup'>
+    <div class='cnt223'>
+      <h1 class="popup_heading">Fillup Form</h1>
+      <p>
+        <input type="text" name="name" placeholder="Enter Your Name" style="border-radius: 23px;
+        width: 100%;font-size: 15px;">
+
+
+        <input type="text" name="phone" placeholder="Enter Your Phone" required="true" style="border-radius: 23px;
+        width: 100%;
+        margin-top: 3%;font-size: 15px;">
+        <br /><br />
+        <input type="button" name="button" value="Submit">
+        <br /><br />
+        <a href='' class='close'>Close</a>
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <header role="banner">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container" style="position: fixed;top: 0;width: 100%;right:0;left:0;height:76px;">
+        <a class="navbar-brand" href="index.html">
+          Tathastu
+        </a>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Our Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="aud_play_pause()" id="icon_btn" class="nav-link"><i class="fa fa-play-circle"
+                  style="font-size:24px"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END header -->
+
+  <section class="home-slider owl-carousel">
+
+    <div class="slider-item"
+      style="background-image: url('https://ik.imagekit.io/veub8tjlplror/wedding_salad_35_B18yf2xaN.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h2>Welcome To Tathastu Event & wedding planner</h2>
+            <p class="mb-5">Tathastu makes weddings Beautiful and Memorable. After all, a special occasion deservs
+              special attention. We go that extra distance to put 'WOW' factor into every details with out team of
+              expert Wedding Planners.</p>
+            <p><a href="reg/registration.html" class="btn btn-white btn-outline-white">Book Your Event</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item"
+      style="background-image: url('https://ik.imagekit.io/veub8tjlplror/Marwari-wedding-F5-Weddings_HkUdDtnnE.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1>Explore Our Weekend Services</h1>
+            <p class="mb-5">TATHASTU makes weddings Beautiful and Memorable.Find yoursuitable events from here.</p>
+            <p><a href="events.html" class="btn btn-white btn-outline-white">Explore Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item"
+      style="background-image: url('https://ik.imagekit.io/veub8tjlplror/Royal-Wedding_Sk4qPY324.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1>Makes Your Event Memorable</h1>
+            <p class="mb-5">TATHASTU makes weddings Beautiful and Memorable.</p>
+            <p><a href="events.html" class="btn btn-white btn-outline-white">Explore Now</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- END slider -->
+
+
+  <button type="button" onclick="aud_play_pause()" id="icon_btn"><i class="fa fa-play-circle"
+      style="font-size:24px"></i></button>
+  <section class="upcoming-events-highlight">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 element-animate">
+          <span class="section-heading">Tathastu Event & wedding planner</span>
+          <h2><a>We must walk in the middle of the road.</a></h2>
+          <!-- <div class="events-meta">
+            <span class="mr-2"><span class="ion-clock mr-2"></span>Saturday 03/09/2018 09:30 AM</span>
+            <span class="mr-2"><span class="ion-location mr-2"></span>St. Petersburg, US</span>
+            <span class="mr-2"><span class="ion-person mr-2"></span>Pastor Luis Matthew</span>
+          </div> -->
+        </div>
+        <div class="col-md-6 element-animate">
+          <p><a href="reg/registration.html" class="btn btn-white btn-outline-white">Book Your Event</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <section class="element-animate worship-time">
+
+    <div class="half d-md-flex d-block">
+      <div class="image order-2"
+        style="background-image: url('https://ik.imagekit.io/veub8tjlplror/original_indian-wedding-ritual-henna_ryHC43lTE.jpg')">
+      </div>
+      <div class="text element-animate" id="what_we_are">
+        <h3 class="mb-4 mt-5">What We Are</h3>
+
+        <ul class="worship-time-list mb-5">
+          <p style="text-align: justify;color:black;">
+            We of Tathastu Event & wedding planner, are experienced producing high quality events of any type or scale.
+            Our passion is to manage behind the scenes details to deliver a superior event experience to the
+            audience.</br>
+            We thrive on delighting you - our valued customers - by helping you host events that meets or exceeds your
+            goals with assured cheapest rates across India..!
+            We handle the arrangement of various celebrities like Dancers, Film stars, TV artists and various other
+            famous personalities. </br>You name it and we can arrange them for your event to make your day a spark.
+            We do help organising Seminars & Workshops or other types of College certification events with our
+            widespread network of Technical and Management Workshop providers across India
+            We take care of following requirements while arranging a celebrity/artist/mentor for you; Their Dates;
+            Bookings on Priority; Negotiations in the rate packages; Travel; Stay; etc.
+          </p>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <!-- END section -->
+
+  <!-- <section class="section pt-5 pb-2">
+    <div class="container">
+      <div class="row mb-5 justify-content-center element-animate">
+        <div class="col-md-12">
+          <span class="section-heading">Recent Sermons</span>
+          <h2>Listen Our Sermons</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>Seasonal Events</a></h2>
+
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/6_H15rpXD2E.jpg" style="width:350px;">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>corporate events</a></h2>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/7_r1kqA7w34.jpg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>Birthday Parties</a></h2>
+
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/8_rkqVJ4v3N.jpg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section pt-5 pb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>Wedding Photography</a></h2>
+
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/kerala-muslim-girls-wedding-photos-5_HkSMAIsh4.jpg"
+                style="width:350px;">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>Mehendi</a></h2>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/10_SkpNG4v34.jpg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a>Fireworks</a></h2>
+
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/12_B1wmmND3V.jpg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- END section -->
+
+  <section class="section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center element-animate">
+        <div class="col-md-12">
+
+          <h2>Top Wedding Places</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4 element-animate">
+          <div class="media custom-media">
+            <img class="mr-3" width="30" src="https://ik.imagekit.io/veub8tjlplror/Tathastu/14_BkaRwVvnV.jpg"
+              alt="Generic placeholder image">
+            <div class="media-body">
+              <h3 class="mt-0">Kerala,</br>Tamilnadu</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 element-animate">
+          <div class="media custom-media">
+            <img class="mr-3" width="30" src="https://ik.imagekit.io/veub8tjlplror/Tathastu/xx_r1myKNw34.jpg"
+              alt="Generic placeholder image">
+            <div class="media-body">
+              <h3 class="mt-0">Goa,</br>Maharastra</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 element-animate">
+          <div class="media custom-media">
+            <img class="mr-3" width="30" src="https://ik.imagekit.io/veub8tjlplror/Tathastu/20_rytdt4vn4.jpg"
+              alt="Generic placeholder image">
+            <div class="media-body">
+              <h3 class="mt-0">Jodhpur,</br>Rajasthan</h3>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="audio_play">
+    <audio loop autoplay id="myTune">
+      <source src="bg-audio.mpeg" type="audio/mpeg">
+    </audio>
+  </div>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <h3>About The TATHASTU </h3>
+          <p class="mb-5">Tathastu makes weddings Beautiful and Memorable. After all, a special occasion deservs special
+            attention. We go that extra distance to put 'WOW' factor into every details with out team of expert Wedding
+            Planners.</p>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">Our Services</a></li>
+            <li><a href="gallery.html">Galley</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 mb-5">
+          <h3>Contact Info</h3>
+          <ul class="list-unstyled footer-link">
+            <li class="d-block">
+              <span class="d-block">Address:</span>
+              <span class="text-white">SUNSHINE PLAZA(OPPOSITE TOMUNICIPAL TOLLGATE)JAMBONI (WARD NO -
+                6),P.S.+P.O.-BOLPUR,
+
+                DIST. BIRBHUM,PIN-731204</span></li>
+            <li class="d-block"><span class="d-block">Phone: <span class="text-white">9123856915 /
+                  9933023727</span></br>
+
+                OFFICE NO. - <span class="text-white">9641962834</span>
+            </li>
+            <li class="d-block"><span class="d-block">Email:</span><span class="text-white">info@yourdomain.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row footer-bottom d-flex justify-content-between align-items-center">
+        <div class="col-lg-6 col-sm-12" style="text-align:center">
+          <div class="foot-about">
+
+            <p class="copyright">
+
+              This template is made with <i class="fa fa-heart faa-pulse animated" style="color:#FF1493;"></i> by <a
+                href="#" target="_blank" style="color:#FF1493;"><img
+                  src="https://ik.imagekit.io/veub8tjlplror/imageedit_5_2868962895_B1ZjWnep4.png"
+                  style="width:40px;" />Elrising</a>
+
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div><!-- .foot-about -->
+        </div><!-- .col -->
+        <div class="col-lg-6 col-sm-12 footer-social" style="text-align:center;">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- END footer -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#f4b214" /></svg></div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelement-and-player.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type='text/javascript'>
+    $(function () {
+      var overlay = $('<div id="overlay"></div>');
+      overlay.show();
+      overlay.appendTo(document.body);
+      $('.popup').show();
+      $('.close').click(function () {
+        $('.popup').hide();
+        overlay.appendTo(document.body).remove();
+        return false;
+      });
+
+      $('.x').click(function () {
+        $('.popup').hide();
+        overlay.appendTo(document.body).remove();
+        return false;
+      });
+    });
+  </script>
+  <script>
+    document.getElementsByClassName("slider-item")[0].style.WebkitFilter = 'blur(4px)';
+    document.getElementsByClassName("slider-item")[0].style.filter = 'blur(4px)';
+  </script>
+  <script>
+    function aud_play_pause() {
+      var myAudio = document.getElementById("myTune");
+      if (myAudio.paused) {
+        myAudio.play();
+      } else {
+        myAudio.pause();
+      }
+    }
+  </script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+</body>
+
+</html>

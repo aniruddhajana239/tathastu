@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container_glry (needed to position the left and right arrows) */
+  .container_glry {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 24%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container_glry for image text */
+  /* .caption-container_glry {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  } */
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .gallery_img_1 {
+    height: 200px;
+    width:150px;
+    border:5px solid white;
+  }
+
+  .gallery_img {
+    height: 700px;
+    
+  }
+  @media screen and (min-width: 0px) and (max-width: 600px) {
+    .gallery_img_1  {
+        height:60px;
+      }
+      .gallery_img {
+    height: 270px;
+    
+  }
+    }
+</style>
+
+<body>
+
+  <h2 style="text-align:center">Tathastu Image Gallery</h2>
+
+  <div class="container_glry">
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/1_SJpoQIBpN.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/2_BJlh7LBpN.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/2_BJlh7LBpN.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/4_rJlenXUHpV.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/5_B1Wh7UBp4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/6_SkZhQUSp4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/7_SkxZ37LS64.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/8_SyWZ37UHaV.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/9_HyGn7UH6N.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/10_ryzh7LrTN.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/11_BkQ27IHpE.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/12_rygm2X8SaN.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/13_Sk42QUS64.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/14_SJ-m3mUraN.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/15_H1RKmIBpE.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/16_rJx0KmUraV.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/17_BkyqQIrp4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/18_SJ19XLHT4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/19_rJW0FQLSa4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/20_SyeAF7LBpV.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/21_rJAF7IrpV.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/22_Syg15X8HTN.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/23_BylyqmISp4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/24_ryb197LS64.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/25_S1-y9QLrTE.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/26_Skl5Q8rpN.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/27_BkZqQ8rpN.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/28_rJSoQ8BTV.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/29_BJFcXLHpV.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/30_H1O9XUS6E.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/31_HJ7oQ8SpV.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/32_ByQomUBTE.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/33_Sy0iXIBpE.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/34_HkxZnQLrTE.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/35_S1B3QLSpN.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img class="gallery_img" src="https://ik.imagekit.io/veub8tjlplror/36_H1EhXLrpN.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <!-- <div class="caption-container_glry">
+      <p id="caption"></p>
+    </div> -->
+
+    <div class="row">
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/1_SJpoQIBpN.jpg"
+          style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/2_BJlh7LBpN.jpg"
+          style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/3_rJyhXUBTV.jpg"
+          style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/4_rJlenXUHpV.jpg"
+          style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/5_B1Wh7UBp4.jpg"
+          style="width:100%" onclick="currentSlide(5)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/6_SkZhQUSp4.jpg"
+          style="width:100%" onclick="currentSlide(6)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/7_SkxZ37LS64.jpg"
+          style="width:100%" onclick="currentSlide(7)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/8_SyWZ37UHaV.jpg"
+          style="width:100%" onclick="currentSlide(8)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/9_HyGn7UH6N.jpg"
+          style="width:100%" onclick="currentSlide(9)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/10_ryzh7LrTN.jpg"
+          style="width:100%" onclick="currentSlide(10)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/11_BkQ27IHpE.jpg"
+          style="width:100%" onclick="currentSlide(11)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/12_rygm2X8SaN.jpg"
+          style="width:100%" onclick="currentSlide(12)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/13_Sk42QUS64.jpg"
+          style="width:100%" onclick="currentSlide(13)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/14_SJ-m3mUraN.jpg"
+          style="width:100%" onclick="currentSlide(14)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/15_H1RKmIBpE.jpg"
+          style="width:100%" onclick="currentSlide(15)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/16_rJx0KmUraV.jpg"
+          style="width:100%" onclick="currentSlide(16)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/17_BkyqQIrp4.jpg"
+          style="width:100%" onclick="currentSlide(17)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/18_SJ19XLHT4.jpg"
+          style="width:100%" onclick="currentSlide(18)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/19_rJW0FQLSa4.jpg"
+          style="width:100%" onclick="currentSlide(19)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/20_SyeAF7LBpV.jpg"
+          style="width:100%" onclick="currentSlide(20)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/21_rJAF7IrpV.jpg"
+          style="width:100%" onclick="currentSlide(21)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/22_Syg15X8HTN.jpg"
+          style="width:100%" onclick="currentSlide(22)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/23_BylyqmISp4.jpg"
+          style="width:100%" onclick="currentSlide(23)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/24_ryb197LS64.jpg"
+          style="width:100%" onclick="currentSlide(24)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/25_S1-y9QLrTE.jpg"
+          style="width:100%" onclick="currentSlide(25)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/26_Skl5Q8rpN.jpg"
+          style="width:100%" onclick="currentSlide(26)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/27_BkZqQ8rpN.jpg"
+          style="width:100%" onclick="currentSlide(27)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/28_rJSoQ8BTV.jpg"
+          style="width:100%" onclick="currentSlide(28)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/29_BJFcXLHpV.jpg"
+          style="width:100%" onclick="currentSlide(29)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/30_H1O9XUS6E.jpg"
+          style="width:100%" onclick="currentSlide(30)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/31_HJ7oQ8SpV.jpg"
+          style="width:100%" onclick="currentSlide(31)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/32_ByQomUBTE.jpg"
+          style="width:100%" onclick="currentSlide(32)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/33_Sy0iXIBpE.jpg"
+          style="width:100%" onclick="currentSlide(33)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/34_HkxZnQLrTE.jpg"
+          style="width:100%" onclick="currentSlide(34)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/34_HkxZnQLrTE.jpg"
+          style="width:100%" onclick="currentSlide(35)" alt="">
+      </div>
+      <div class="column">
+        <img class="gallery_img_1" class="demo cursor" src="https://ik.imagekit.io/veub8tjlplror/36_H1EhXLrpN.jpg"
+          style="width:100%" onclick="currentSlide(36)" alt="Snowy Mountains">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
+</body>
+
+</html>

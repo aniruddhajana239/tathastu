@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Tathastu Event & wedding planner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    #icon_btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 400000px) {
+      #audio_play {
+        display: none;
+      }
+
+      /* show it on small screens */
+    }
+  </style>
+</head>
+
+<body>
+
+  <header role="banner">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container" style="position: fixed;top: 0;width: 100%;right:0;left:0;">
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/logo_ryhjt08nV.png" />
+                      </a> -->
+          Tathastu
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Our Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="aud_play_pause()" id="icon_btn" class="nav-link"><i class="fa fa-play-circle"
+                  style="font-size:24px"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END header -->
+
+  <!-- <section class="home-slider owl-carousel">
+
+    <div class="slider-item"
+      style="background-image: url('https://ik.imagekit.io/veub8tjlplror/Tathastu/31_SyYtdSw24.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1>Events</h1>
+            <p class="mb-5">Choose your require event</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section> -->
+  <section class="home-slider owl-carousel">
+
+    <div class="slider-item"
+      style="background-image: url('https://ik.imagekit.io/veub8tjlplror/Tathastu/31_SyYtdSw24.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h2>Choose your require event</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item"
+      style="background-image: url('https://ik.imagekit.io/veub8tjlplror/wedding-dresses-kerala-hindu-licious-best-dress-ideas-for-groom-whykol-in-bridesmaid-celebrity-bollywood-gown-of-actresses-indian_SJvo8hxTN.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1>Explore Our Wedding Services</h1>
+            <p class="mb-5">TATHASTU makes weddings Beautiful and Memorable.Find yoursuitable events from here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item" style="background-image: url('https://ik.imagekit.io/veub8tjlplror/1_rymFP2xp4.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <p class="mb-5">TATHASTU makes weddings Beautiful and Memorable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-item" style="background-image: url('https://ik.imagekit.io/veub8tjlplror/2_Bywo_nlaN.jpg');">
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1>Makes Your Event Memorable</h1>
+            <p class="mb-5">TATHASTU makes weddings Beautiful and Memorable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END slider -->
+
+  <section class="section pt-5 pb-2">
+    <div class="container">
+      <div class="row mb-5 justify-content-center element-animate">
+        <div class="col-md-12">
+          <h2>Our Events</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a href="reg/registration.html">Corporate events</a></h2>
+              <p class="sermon-meta"> Corporate entertainment describes private events held by corporations or
+                businesses for their staff, clients or stakeholders.</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/1_H1c6aSPh4.jpg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a href="reg/registration.html">Birthday Party</a></h2>
+              <p class="sermon-meta"> A Birthdays of people are celebrated in numerous cultures, often with birthday
+                gifts.</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/2_Hk6hpHwhN.jpg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a href="reg/registration.html">Family Function</a></h2>
+              <p class="sermon-meta"> Times to come close with your family and take part on every small beautiful
+                moments.</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/3_HyVN93x6V.jpg" style="width:300px;" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a href="reg/registration.html">College Events</a></h2>
+              <p class="sermon-meta">In India, a cultural festival, cultfest, culfest or college fest is an annual
+                cultural event at a college or university organised by the student community</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/4_HkITarP3E.jpg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a href="reg/registration.html">School Events</a></h2>
+              <p class="sermon-meta"> In India, a cultural festival, cultfest, culfest or school fest is an annual
+                cultural event at a school or university organised by the student community</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/5_Skp6TrDnN.jpeg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a href="reg/registration.html">Special Party Events</a></h2>
+              <p class="sermon-meta">A party is a gathering of people who have been invited by a host for the purposes
+                of socializing, conversation and recreation, or as part of a festival.</p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/6_SySapHDh4.jpg" style="width:350px;" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-5" style="display:block;margin-left:auto;margin-right:auto;">
+
+          <div class="sermon element-animate">
+            <div class="sermon-text">
+              <h2><a href="reg/registration.html">Promotions</a></h2>
+              <p class="sermon-meta">In marketing, promotion refers to any type of marketing communication used to
+                inform or. Promotions can be held in physical environments at special events such as concerts, festivals
+                and trade. </p>
+            </div>
+            <div class="player">
+              <img src="https://ik.imagekit.io/veub8tjlplror/Tathastu/7_H1sppHwhN.jpg"
+                style="width:350px;height: 220px;" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- END section -->
+
+  <div id="audio_play">
+    <audio loop autoplay id="myTune">
+      <source src="bg-audio.mpeg" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <h3>About The TATHASTU </h3>
+          <p class="mb-5">Tathastu makes weddings Beautiful and Memorable. After all, a special occasion deservs special
+            attention. We go that extra distance to put 'WOW' factor into every details with out team of expert Wedding
+            Planners.</p>
+          <ul class="list-unstyled footer-link d-flex footer-social">
+            <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Quick Links</h3>
+          <ul class="list-unstyled footer-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">Our Services</a></li>
+            <li><a href="gallery.html">Galley</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 mb-5">
+          <h3>Contact Info</h3>
+          <ul class="list-unstyled footer-link">
+            <li class="d-block">
+              <span class="d-block">Address:</span>
+              <span class="text-white">SUNSHINE PLAZA(OPPOSITE TOMUNICIPAL TOLLGATE)JAMBONI (WARD NO -
+                6),P.S.+P.O.-BOLPUR,
+
+                DIST. BIRBHUM,PIN-731204</span></li>
+            <li class="d-block"><span class="d-block">Phone: <span class="text-white">9123856915 /
+                  9933023727</span></br>
+
+                OFFICE NO. - <span class="text-white">9641962834</span>
+            </li>
+            <li class="d-block"><span class="d-block">Email:</span><span class="text-white">info@yourdomain.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#f4b214" /></svg></div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelement-and-player.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+
+      for (var i = 0; i < total; i++) {
+        new MediaElementPlayer(mediaElements[i], {
+          pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+          shimScriptAccess: 'always',
+          success: function () {
+            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+            for (var j = 0; j < targetTotal; j++) {
+              target[j].style.visibility = 'visible';
+            }
+          }
+        });
+      }
+    });
+  </script>
+    <script>
+        document.getElementsByClassName("slider-item")[0].style.WebkitFilter = 'blur(4px)';
+        document.getElementsByClassName("slider-item")[0].style.filter = 'blur(4px)';
+      </script>
+      <script>
+        function aud_play_pause() {
+          var myAudio = document.getElementById("myTune");
+          if (myAudio.paused) {
+            myAudio.play();
+          } else {
+            myAudio.pause();
+          }
+        }
+      </script>
+</body>
+
+</html>
